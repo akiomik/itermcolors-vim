@@ -1,4 +1,33 @@
 itermcolors-vim
 ===============
 
-generate iTerm color scheme using vim color scheme
+## 概要
+vimのcolorschemeからiTerm2のcolorschemeを生成するvimプラグインです。
+shellとvimで同じように色が設定できるようになるため、ターミナルに統一感が出ます。
+solarizedやtomorrowのようにvimとiTerm2の両方に提供されているcolorschemeもありますが、
+colorschemeがvimのものしか提供されていない場合に便利です。
+
+
+## 使い方
+
+1. 以下のコマンドを実行することにより、{colorscheme名}.itermcolorsというファイルがカレントディレクトリに作成されます。
+  ```viml
+:ITermColors
+  ```
+
+2. 作成された{colorscheme名}.itermcolorsを開くか、iTerm2の設定画面からimportしてください。
+
+
+## 注意点
+- iTerm2用のcolorschemeが作成できるのは、GUIカラーが指定されているvimのcolorschemeのみになります。
+- iTerm2用のcolorschemeは、同名のファイルが存在する場合でも上書きされますのでご注意ください。
+
+
+## TODO
+- なるべく同じ色が選択されないようにする
+  (ターミナルの設定によっては背景色と前景色が被ってしまい、字が読めなくなることがあるため)
+
+
+## ライセンス
+NYSLが適用されます。
+詳しくはNYSL.txtをお読みください。

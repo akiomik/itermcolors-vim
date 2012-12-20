@@ -15,17 +15,20 @@ colorschemeがvimのものしか提供されていない場合に便利です。
   ![molokai風shell](https://github.com/akiomik/itermcolors-vim/raw/master/image/screenshot-shell.png)
 
 - molokai風colorscheme
-![molokai風colorscheme](https://github.com/akiomik/itermcolors-vim/raw/master/image/screenshot-colorscheme.png)
+  ![molokai風colorscheme](https://github.com/akiomik/itermcolors-vim/raw/master/image/screenshot-colorscheme.png)
 
 
 ## 使い方
+1. git cloneしたあと、`autoload/itermcolors.vim`と`plugin/itermcolors.vim`をそれぞれ`$HOME/.vim/`下に配置してください。
 
-1. 以下のコマンドを実行することにより、{colorscheme名}.itermcolorsというファイルがカレントディレクトリに作成されます。
+2. vim上で以下のコマンドを実行することにより、
+   現在使用しているcolorschemeをもとに{colorscheme名}.itermcolorsというファイルがカレントディレクトリに作成されます。
+
   ```viml
 :ITermColors
   ```
 
-2. 作成された{colorscheme名}.itermcolorsを開くか、iTerm2の設定画面からimportしてください。
+3. 作成された{colorscheme名}.itermcolorsを開くか、iTerm2の設定画面からimportしてください。
 
 
 ## 注意点

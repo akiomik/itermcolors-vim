@@ -8,6 +8,16 @@ solarizedやtomorrowのようにvimとiTerm2の両方に提供されているcol
 colorschemeがvimのものしか提供されていない場合に便利です。
 
 
+## スクリーンショット
+以下はmolokaiというcolorschemeからiTerm2用のcolorschemeを生成し、zshのプロンプトに色をつけた例です。
+
+- molokai風shell
+  ![molokai風shell](https://github.com/akiomik/itermcolors-vim/raw/master/image/screenshot-shell.png)
+
+- molokai風colorscheme
+![molokai風colorscheme](https://github.com/akiomik/itermcolors-vim/raw/master/image/screenshot-colorscheme.png)
+
+
 ## 使い方
 
 1. 以下のコマンドを実行することにより、{colorscheme名}.itermcolorsというファイルがカレントディレクトリに作成されます。

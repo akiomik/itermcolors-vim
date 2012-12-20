@@ -1,5 +1,5 @@
 " itermcol.vim
-" generate iTerm color scheme using vim colorscheme
+" generate iTerm colorscheme using vim colorscheme
 " author @akiomik
 
 " return current colorscheme name
@@ -83,7 +83,6 @@ endfunction
 " return .itermcolors xml format text
 " TODO: reduce dupulicate colors
 function! s:generate_iterm_colors_xml(iterm_colors)
-	" print dtd
 	let l:xml = ""
 	let l:xml = l:xml . '<?xml version="1.0" encoding="UTF-8"?>' . "\n"
 	let l:xml = l:xml . '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">' . "\n"
@@ -145,7 +144,7 @@ function! s:generate_iterm_colors_xml(iterm_colors)
 endfunction
 
 
-" return colorscheme ofject
+" return colorscheme object
 function! s:build_colorscheme()
 	let l:scheme = {}
 	let l:scheme["normal"]         = s:get_hilight_colors("Normal")
@@ -265,7 +264,7 @@ function! s:build_iterm_colors(colorscheme, ansi_colors)
 endfunction
 
 
-" checkc iterm colors format
+" check iterm colors format
 function! s:check_iterm_colors(iterm_colors)
 	for l:group in keys(a:iterm_colors)
 		for l:color in keys(a:iterm_colors[l:group])
